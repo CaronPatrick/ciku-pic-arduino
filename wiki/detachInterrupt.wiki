@@ -1,0 +1,15 @@
+#summary Library Reference
+
+=detachInterrupt()=
+
+==Description==
+Turns off the given interrupt.
+
+==Syntax==
+detachInterrupt(interrupt)
+
+==Parameters==
+interrupt: the number of the interrupt to disable (EXTERNAL_INT_0 or EXTERNAL_INT_1 or EXTERNAL_INT_2).
+
+==Returns==
+None.
