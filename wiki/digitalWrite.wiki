@@ -1,13 +1,33 @@
-#summary One-sentence summary of this page.
+#summary Library Reference
 
-= Introduction =
+=pinMode()=
 
-Add your content here.
+==Description==
+Write a HIGH or a LOW value to a digital pin.
+If the pin has been configured as an OUTPUT with pinMode(), its voltage will be set to the corresponding value: 5V for HIGH, 0V (ground) for LOW.
 
+==Syntax==
+digitalWrite(pin, value)
 
-= Details =
+==Parameters==
+pin: the pin number.
+value: HIGH or LOW.
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+==Returns==
+None.
+
+==Example==
+{{{
+void setup()
+{
+  pinMode(LED, OUTPUT);      // sets the digital pin as output
+}
+
+void loop()
+{
+  digitalWrite(LED, HIGH);   // sets the LED on
+  delay(1000);                  // waits for a second
+  digitalWrite(LED, LOW);    // sets the LED off
+  delay(1000);                  // waits for a second
+}
+}}}
