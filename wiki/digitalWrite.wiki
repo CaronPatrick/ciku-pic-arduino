@@ -3,7 +3,8 @@
 =digitalWrite()=
 
 ==Description==
-Write a HIGH or a LOW value to a digital pin. If the pin has been configured as an OUTPUT with pinMode(), its voltage will be set to the corresponding value: 5V for HIGH, 0V (ground) for LOW.
+Write a HIGH or a LOW value to a digital pin.<br>
+If the pin has been configured as an OUTPUT with pinMode(), its voltage will be set to the corresponding value: 5V for HIGH, 0V (ground) for LOW.
 
 ==Syntax==
 digitalWrite(pin, value)
