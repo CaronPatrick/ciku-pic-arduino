@@ -9,7 +9,7 @@ Configures the specified pin to behave either as an input or an output.
 pinMode(pin, mode)
 
 ==Parameters==
-pin: the number of the pin whose mode you wish to set.
+pin: the number of the pin whose mode you wish to set.<br>
 mode: INPUT, OUTPUT.
 
 ==Returns==
