@@ -3,11 +3,28 @@
 =pinMode()=
 
 ==Description==
-Add your content here.
-
+Configures the specified pin to behave either as an input or an output.
 
 ==Syntax==
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+pinMode(pin, mode)
+
+==Parameters==
+pin: the number of the pin whose mode you wish to set.
+mode: INPUT, OUTPUT.
+
+==Returns==
+None.
+
+==Example==
+void setup()
+{
+  pinMode(LED, OUTPUT);      // sets the digital pin as output
+}
+
+void loop()
+{
+  digitalWrite(LED, HIGH);   // sets the LED on
+  delay(1000);                  // waits for a second
+  digitalWrite(LED, LOW);    // sets the LED off
+  delay(1000);                  // waits for a second
+}
