@@ -1,6 +1,6 @@
 #summary Library Reference
 
-=pinMode()=
+=digitalWrite()=
 
 ==Description==
 Write a HIGH or a LOW value to a digital pin.
