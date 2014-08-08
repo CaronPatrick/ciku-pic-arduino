@@ -3,7 +3,7 @@
 =analogRead()=
 
 ==Description==
-Reads the value from the specified analog pin. The CIKU board contains a 6 channel 10-bit analog to digital converter. This means that it will map input voltages between 0 and 5 volts into integer values between 0 and 1023. This yields a resolution between readings of: 5 volts / 1024 units or, .0049 volts (4.9 mV) per unit. The input range and resolution can be changed using analogReference().
+Reads the value from the specified analog pin. The CIKU board contains a 6 channel 10-bit analog to digital converter (A0 - A5). This means that it will map input voltages between 0 and 5 volts into integer values between 0 and 1023. This yields a resolution between readings of: 5 volts / 1024 units or, .0049 volts (4.9 mV) per unit. The input range and resolution can be changed using analogReference().
 
 ==Syntax==
 analogRead(pin)
