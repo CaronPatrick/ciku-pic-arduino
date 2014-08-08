@@ -1,0 +1,37 @@
+#summary Library Reference
+
+=analogRead()=
+
+==Description==
+Reads the value from the specified analog pin. The CIKU board contains a 6 channel 10-bit analog to digital converter. This means that it will map input voltages between 0 and 5 volts into integer values between 0 and 1023. This yields a resolution between readings of: 5 volts / 1024 units or, .0049 volts (4.9 mV) per unit. The input range and resolution can be changed using analogReference().
+
+==Syntax==
+analogRead(pin)
+
+==Parameters==
+pin: the number of the analog input pin to read from (A0 - A5).
+
+==Returns==
+int (0 to 1023).
+
+==Note==
+If the analog input pin is not connected to anything, the value returned by analogRead() will fluctuate based on a number of factors (e.g. the values of the other analog inputs, how close your hand is to the board, etc.).
+
+==Example==
+{{{
+int analogPin = A0;
+int pwmPin = 5;
+
+void setup()
+{
+  pinMode(analogPin, INPUT); // sets analogPin as input
+  pinMode(pwmPin, OUTPUT);   // sets pwmPin as output
+}
+
+void loop()
+{
+  int adc = analogRead(A0); // read the voltage value on analog pin
+  analogWrite(pwmPin, adc); // control output pin using pwm base on adc value
+  delay(10);          // waits for 10ms
+}
+}}}
