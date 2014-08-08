@@ -16,6 +16,7 @@ mode: INPUT, OUTPUT.
 None.
 
 ==Example==
+{{{
 void setup()
 {
   pinMode(LED, OUTPUT);      // sets the digital pin as output
@@ -28,3 +29,4 @@ void loop()
   digitalWrite(LED, LOW);    // sets the LED off
   delay(1000);                  // waits for a second
 }
+}}}
