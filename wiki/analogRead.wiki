@@ -32,6 +32,6 @@ void loop()
 {
   int adc = analogRead(A0); // read the voltage value on analog pin
   analogWrite(pwmPin, adc); // control output pin using pwm base on adc value
-  delay(10);          // waits for 10ms
+  delay(10); // waits for 10ms
 }
 }}}
