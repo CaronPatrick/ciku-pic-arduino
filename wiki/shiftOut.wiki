@@ -1,13 +1,39 @@
-#summary One-sentence summary of this page.
+#summary Library Reference
 
-= Introduction =
+=shiftOut()=
 
-Add your content here.
+==Description==
+Shifts out a byte of data one bit at a time. Starts from either the most (i.e. the leftmost) or least (rightmost) significant bit. Each bit is written in turn to a data pin, after which a clock pin is pulsed (taken high, then low) to indicate that the bit is available.<br>
+Note: if you're interfacing with a device that's clocked by rising edges, you'll need to make sure that the clock pin is low before the call to shiftOut(), e.g. with a call to digitalWrite(clockPin, LOW).
 
+==Syntax==
+shiftOut(dataPin, clockPin, bitOrder, value)
 
-= Details =
+==Parameters==
+dataPin: the pin on which to output each bit.<br>
+clockPin: the pin to toggle once the dataPin has been set to the correct value.<br>
+bitOrder: which order to shift out the bits; either MSBFIRST or LSBFIRST.<br>
+(Most Significant Bit First, or, Least Significant Bit First)<br>
+value: the data to shift out. (BYTE)
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+==Returns==
+None.
+
+==Note==
+The dataPin and clockPin must already be configured as outputs by a call to pinMode().<br>
+shiftOut is currently written to output 1 byte (8 bits) so it requires a two step operation to output values larger than 255.
+{{{
+// Do this for MSBFIRST serial
+int data = 500;
+// shift out highbyte
+shiftOut(dataPin, clock, MSBFIRST, (data >> 8));  
+// shift out lowbyte
+shiftOut(dataPin, clock, MSBFIRST, data);
+
+// Or do this for LSBFIRST serial
+data = 500;
+// shift out lowbyte
+shiftOut(dataPin, clock, LSBFIRST, data);  
+// shift out highbyte 
+shiftOut(dataPin, clock, LSBFIRST, (data >> 8)); 
+}}}
