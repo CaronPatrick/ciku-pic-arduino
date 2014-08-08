@@ -1,0 +1,37 @@
+#summary Library Reference
+
+=analogWrite()=
+
+==Description==
+Writes an analog value (PWM wave) to a pin (5 and 6). Can be used to light a LED at varying brightnesses or drive a motor at various speeds. After a call to analogWrite(), the pin will generate a steady square wave of the specified duty cycle until the next call to analogWrite() (or a call to digitalRead() or digitalWrite() on the same pin). The frequency of the PWM signal on both pins is approximately 2.44kHz.<br>
+You do not need to call pinMode() to set the pin as an output before calling analogWrite().<br>
+The analogWrite function has nothing to do with the analog pins or the analogRead function.<br>
+
+==Syntax==
+analogWrite(pin, value)
+
+==Parameters==
+pin: the pin to write to (only available on pin 5 and 6).
+value: the duty cycle: between 0 (always off) and 1023 (always on).
+
+==Returns==
+None.
+
+==Example==
+{{{
+int analogPin = A0;
+int pwmPin = 5;
+
+void setup()
+{
+  pinMode(analogPin, INPUT); // sets analogPin as input
+  pinMode(pwmPin, OUTPUT);   // sets pwmPin as output
+}
+
+void loop()
+{
+  int adc = analogRead(A0); // read the voltage value on analog pin
+  analogWrite(pwmPin, adc); // control output pin using pwm base on adc value
+  delay(10); // waits for 10ms
+}
+}}}
