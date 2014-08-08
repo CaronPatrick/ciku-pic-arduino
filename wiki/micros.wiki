@@ -1,0 +1,37 @@
+#summary Library Reference
+
+=micros()=
+
+==Description==
+Returns the number of microseconds since the CIKU board began running the current program. This number will overflow (go back to zero), after approximately 70 minutes.<br>
+Note: there are 1,000 microseconds in a millisecond and 1,000,000 microseconds in a second.
+
+==Syntax==
+micros()
+
+==Parameters==
+None.
+
+==Returns==
+Number of microseconds since the program started (unsigned long).
+
+==Example==
+{{{
+unsigned long currentMicros = 0;
+int interval = 100000;
+
+void setup()
+{
+  pinMode(LED, OUTPUT); // sets the digital pin as output
+}
+
+void loop()
+{
+  unsigned long currentMicros = micros(); // read current millis
+  if(currentMicros - currentMicros > interval) // after 100ms
+  {
+    currentMicros = currentMicros;
+    digitalToggle(LED); // toggle LED state
+  }
+}
+}}}
