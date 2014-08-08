@@ -1,4 +1,4 @@
-#library reference
+#summary Library Reference
 
 =pinMode()=
 
