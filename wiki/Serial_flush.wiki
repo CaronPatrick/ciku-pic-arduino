@@ -1,0 +1,15 @@
+#summary Library Reference
+
+=Serial_flush()=
+
+==Description==
+Waits for the transmission of outgoing serial data to complete.
+
+==Syntax==
+Serial_flush()
+
+==Parameters==
+None.
+
+==Returns==
+None.
