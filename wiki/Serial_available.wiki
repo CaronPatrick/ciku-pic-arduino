@@ -16,6 +16,8 @@ The number of bytes available to be read.
 
 ==Example==
 {{{
+#include "HardwareSerial.h"
+
 int incomingByte = 0;
 
 void setup()
