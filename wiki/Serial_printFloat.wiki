@@ -1,0 +1,30 @@
+#summary Library Reference
+
+=Serial_printFloat()=
+
+==Description==
+Prints data to the serial port as human-readable ASCII text.
+
+==Syntax==
+Serial_printFloat(number, point)
+
+==Parameters==
+number: the floating number to be print - double.<br>
+point: number of decimal point.
+
+==Returns==
+None.
+
+==Example==
+{{{
+void setup()
+{
+  Serial_begin(9600); // opens serial port, sets data rate to 9600 bps
+  Serial_printFloat(34.567, 2); // result display 34.57
+}
+
+void loop()
+{
+  
+}
+}}}
