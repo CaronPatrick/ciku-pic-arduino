@@ -1,0 +1,18 @@
+#summary Library Reference
+
+=Serial_readBytesUntil()=
+
+==Description==
+Serial_readBytesUntil() reads characters from the serial buffer into an array. The function terminates if the terminator character is detected, the determined length has been read, or it times out.<br>
+Serial_readBytesUntil() returns the number of characters read into the buffer. A 0 means no valid data was found.
+
+==Syntax==
+Serial_readBytesUntil(character, buffer, length)
+
+==Parameters==
+character: the character to search for - char.<br>
+buffer: the buffer to store the bytes in - char[].<br>
+length: the number of bytes to read - int.
+
+==Returns==
+The number of characters read into the buffer.
