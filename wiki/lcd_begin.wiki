@@ -1,0 +1,33 @@
+#summary Library Reference
+
+=lcd_begin()=
+
+==Description==
+Initializes the interface to the LCD screen, and specifies the dimensions (width and height) of the display. lcd_begin() needs to be called before any other LCD library commands.
+
+==Syntax==
+lcd_begin(cols, rows)
+
+==Parameters==
+cols: the number of columns that the display has.<br>
+rows: the number of rows that the display has.
+
+==Returns==
+None.
+
+==Example==
+{{{
+#include "LiquidCrystal.h"
+
+void setup()
+{
+  lcd_4bit(8, 9, 4, 5, 6, 7);
+  lcd_begin(16, 2);
+  lcd_printString("Hello World!");
+}
+
+void loop()
+{
+
+}
+}}}
