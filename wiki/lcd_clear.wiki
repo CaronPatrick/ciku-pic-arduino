@@ -1,0 +1,15 @@
+#summary Library Reference
+
+=lcd_clear()=
+
+==Description==
+Clears the LCD screen and positions the cursor in the upper-left corner.
+
+==Syntax==
+lcd_clear()
+
+==Parameters==
+None.
+
+==Returns==
+None.
