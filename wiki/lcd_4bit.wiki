@@ -3,7 +3,7 @@
 =lcd_4bit()=
 
 ==Description==
-
+Set CIKU IO to be connected to LCD pins for 4 bit mode.
 
 ==Syntax==
 lcd_4bit(rs, enable, d4, d5, d6, d7)
