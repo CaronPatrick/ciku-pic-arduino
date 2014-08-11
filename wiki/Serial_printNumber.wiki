@@ -1,0 +1,30 @@
+#summary Library Reference
+
+=Serial_printNumber()=
+
+==Description==
+Prints data to the serial port as human-readable ASCII text.
+
+==Syntax==
+Serial_printNumber(number, base)
+
+==Parameters==
+number: the number to be print - long.<br>
+base: specifies the base of the number to be printed (BIN, OCT, DEC, HEX).
+
+==Returns==
+None.
+
+==Example==
+{{{
+void setup()
+{
+  Serial_begin(9600); // opens serial port, sets data rate to 9600 bps
+  Serial_printNumber(1234, DEC);
+}
+
+void loop()
+{
+  
+}
+}}}
