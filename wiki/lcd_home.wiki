@@ -1,0 +1,15 @@
+#summary Library Reference
+
+=lcd_home()=
+
+==Description==
+Positions the cursor in the upper-left of the LCD. That is, use that location in outputting subsequent text to the display.
+
+==Syntax==
+lcd_home()
+
+==Parameters==
+None.
+
+==Returns==
+None.
