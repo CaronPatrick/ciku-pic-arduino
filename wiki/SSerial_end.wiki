@@ -1,0 +1,15 @@
+#summary Library Reference
+
+=SSerial_end()=
+
+==Description==
+Disables software serial communication on pin 2 and 3.
+
+==Syntax==
+SSerial_end()
+
+==Parameters==
+None.
+
+==Returns==
+None.
