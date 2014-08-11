@@ -1,0 +1,17 @@
+#summary Library Reference
+
+=Serial_readBytes()=
+
+==Description==
+Serial_readBytes() reads characters from the serial port into a buffer. The function terminates if the determined length has been read.<br>
+Serial_readBytes() returns the number of characters placed in the buffer. A 0 means no valid data was found.
+
+==Syntax==
+Serial_readBytes(buffer, length)
+
+==Parameters==
+buffer: the buffer to store the bytes in - char[].
+length: the number of bytes to read - int.
+
+==Returns==
+The number of characters placed in the buffer.
