@@ -1,0 +1,33 @@
+#summary Library Reference
+
+=lcd_printFloat()=
+
+==Description==
+Prints floating number to the LCD.
+
+==Syntax==
+lcd_printFloat(number, point)
+
+==Parameters==
+number: the floating number to be printed - double.<br>
+point: number of decimal point.
+
+==Returns==
+None.
+
+==Examples==
+{{{
+#include "LiquidCrystal.h"
+
+void setup()
+{
+  lcd_4bit(8, 9, 4, 5, 6, 7);
+  lcd_begin(16, 2);
+  Serial_printFloat(34.567, 2); // result display 34.57
+}
+
+void loop()
+{
+  
+}
+}}}
