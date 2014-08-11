@@ -16,8 +16,6 @@ The first byte of incoming serial data available (or -1 if no data is available)
 
 ==Example==
 {{{
-#include "HardwareSerial.h"
-
 int incomingByte = 0;
 
 void setup()
