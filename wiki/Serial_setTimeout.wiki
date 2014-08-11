@@ -1,0 +1,15 @@
+#summary Library Reference
+
+=Serial_setTimeout()=
+
+==Description==
+Serial_setTimeout() sets the maximum milliseconds to wait for serial data when using Serial_readBytesUntil().
+
+==Syntax==
+Serial_setTimeout(time)
+
+==Parameters==
+time: timeout duration in milliseconds - long.
+
+==Returns==
+None.
