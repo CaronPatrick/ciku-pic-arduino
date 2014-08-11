@@ -1,0 +1,15 @@
+#summary Library Reference
+
+=Serial_end()=
+
+==Description==
+Disables serial communication, allowing the RX and TX pins to be used for general input and output. To re-enable serial communication, call Serial_begin().
+
+==Syntax==
+Serial_end()
+
+==Parameters==
+None.
+
+==Returns==
+None.
