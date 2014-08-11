@@ -16,8 +16,6 @@ val = a value to send as a single byte.
 
 ==Example==
 {{{
-#include "HardwareSerial.h"
-
 int incomingByte = 0;
 
 void setup()
