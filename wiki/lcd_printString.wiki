@@ -13,6 +13,7 @@ string: the string to be printed.
 
 ==Returns==
 None.
+
 ==Examples==
 {{{
 #include "LiquidCrystal.h"
@@ -26,9 +27,6 @@ void setup()
 
 void loop()
 {
-  if(Serial_available())
-  {
-    lcd_write(Serial_read());
-  }
+  
 }
 }}}
