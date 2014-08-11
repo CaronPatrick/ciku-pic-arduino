@@ -1,0 +1,35 @@
+#summary Library Reference
+
+=SSerial_read()=
+
+==Description==
+Return a character that was received on the RX pin of the software serial port (pin 2).
+
+==Syntax==
+SSerial_read()
+
+==Parameters==
+None.
+
+==Returns==
+The character read, or -1 if none is available
+
+==Example==
+{{{
+int incomingByte = 0;
+
+void setup()
+{
+  SSerial_begin(9600); // opens serial port, sets data rate to 9600 bps
+}
+
+void loop()
+{
+  if(SSerial_available() > 0)
+  {
+    incomingByte = SSerial_read();
+    SSerial_printString("I received: ");
+    SSerial_write(incomingByte);
+  }
+}
+}}}
