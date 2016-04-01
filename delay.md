@@ -1,0 +1,29 @@
+# delay() #
+
+## Description ##
+Pauses the program for the amount of time (in miliseconds) specified as parameter. (There are 1000 milliseconds in a second)
+
+## Syntax ##
+delay(ms)
+
+## Parameters ##
+ms: the number of milliseconds to pause (unsigned long).
+
+## Returns ##
+None.
+
+## Example ##
+```
+void setup()
+{
+  pinMode(LED, OUTPUT);      // sets the digital pin as output
+}
+
+void loop()
+{
+  digitalWrite(LED, HIGH);   // sets the LED on
+  delay(1000);                  // waits for a second
+  digitalWrite(LED, LOW);    // sets the LED off
+  delay(1000);                  // waits for a second
+}
+```

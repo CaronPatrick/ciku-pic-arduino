@@ -1,0 +1,27 @@
+# SSerial\_begin() #
+
+## Description ##
+Sets the speed (baud rate) for the serial communication (pin 2 - RX and 3 - TX). Supported baud rates are 1200, 2400, 4800, 9600, 19200.
+
+## Syntax ##
+SSerial\_begin(speed)
+
+## Parameters ##
+speed: in bits per second (baud) - long.
+
+## Returns ##
+None.
+
+## Example ##
+```
+void setup()
+{
+  SSerial_begin(9600); // sets data rate to 9600 bps
+  SSerial_printString("Hello World!");
+}
+
+void loop()
+{
+  
+}
+```

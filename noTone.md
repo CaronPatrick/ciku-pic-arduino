@@ -1,0 +1,13 @@
+# noTone() #
+
+## Description ##
+Stops the generation of a square wave triggered by tone(). Has no effect if no tone is being generated.
+
+## Syntax ##
+noTone(pin)
+
+## Parameters ##
+pin: the pin on which to stop generating the tone.
+
+## Returns ##
+None.

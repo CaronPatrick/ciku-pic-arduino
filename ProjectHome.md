@@ -1,0 +1,1 @@
+CIKU is a microcontroller board based on the PIC18F4550 with Arduino standard IO headers. It has 20 digital input/output pins (of which 2 can be used as PWM outputs and 6 as analog inputs), a 20 MHz crystal oscillator (clock speed up to 48 MHz after PLL), a mini-B USB connection, a power jack, standard Arduino IO headers, a PICkit header, a bootloader switch and a reset button.
